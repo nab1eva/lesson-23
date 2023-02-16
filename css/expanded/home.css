@@ -421,7 +421,8 @@ main .s1 .container .s1-images .img1 {
 main .s1 .container .s1-images .img1 .img-txt {
   margin-left: -620px;
   background-image: linear-gradient(329.39deg, #1c1e53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
-  padding: 0 48px 76px;
+  padding: 0 48px 26px;
+  padding-left: 26px;
   position: absolute;
   bottom: 0;
   height: 100%;
@@ -471,6 +472,7 @@ main .s1 .container .s1-images .imgs .img2 .img2-txt {
   position: absolute;
   bottom: 0;
   padding: 56px;
+  padding-left: 25px;
 }
 main .s1 .container .s1-images .imgs .img2 .img2-txt .txt {
   position: absolute;
@@ -608,12 +610,17 @@ main .s3 .container .carousel .carousel-inner .carousel-item .profile h6 {
   background-color: #2405f2;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 590px) {
+  .img-txt {
+    padding-left: 76px !important;
+  }
+  .img2-txt {
+    padding-left: 56px !important;
+  }
   .txt {
     bottom: 76px !important;
   }
   .txt h3 {
-    margin-bottom: 40px;
     font-weight: 600 !important;
     font-size: 24px !important;
     line-height: 36px !important;
@@ -662,7 +669,7 @@ main .s3 .container .carousel .carousel-inner .carousel-item .profile h6 {
   }
   .imgs .img2 .img2-txt .txt {
     position: absolute;
-    bottom: 45px;
+    bottom: 45px !important;
   }
   .imgs .img2 .img2-txt .txt h3 {
     margin-bottom: 10px !important;
