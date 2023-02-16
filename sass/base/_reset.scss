@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style-type: none;
+  scroll-behavior: smooth;
+  transition: all 0.4s ease;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+$blue: #2405f2;
+$black: #282938;
+$white: #f4f6fc;
+$yellow: #fcd980;
+$darkblue: #1c1e53;
+$ivory: #eef4fa;
+$bgc: #e5e5e5;
+
+h1 {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+}
+
+h2 {
+  color: $black;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+h3 {
+  color: $black;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h5 {
+  color: $black;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+h6 {
+  color: $black;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+p {
+  color: $black;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+label {
+  color: $black;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}

@@ -1,0 +1,135 @@
+$blue: #2405f2;
+$black: #282938;
+$white: #f4f6fc;
+$yellow: #fcd980;
+$darkblue: #1c1e53;
+$ivory: #eef4fa;
+
+footer {
+  background-color: $darkblue;
+  padding: 100px 0;
+  .container {
+    display: flex;
+	flex-direction: column;
+    gap: 50px;
+    .footer-left {
+      p {
+        max-width: 400px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #ffffff;
+        opacity: 0.8;
+        margin: 30px 0 86px;
+      }
+      .contact {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+        background-color: $yellow;
+        padding: 18px 37px 18px 37px;
+        .con {
+			display: flex;
+			flex-direction: column;
+          h6 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 32px;
+            color: #282938;
+          }
+          a {
+			margin: 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #282938;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+    .footer-right {
+      h2 {
+        color: white;
+      }
+      p {
+        margin: 14px 0 30px;
+        max-width: 400px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #f4f6fc;
+        opacity: 0.8;
+      }
+      .socials {
+        display: flex;
+        gap: 25px;
+      }
+    }
+  }
+}
+
+
+
+@media(min-width:580px){
+	.contact{
+		max-width: 517px;
+		flex-direction: initial !important;
+	}
+
+}
+
+
+
+@media(min-width:800px){
+	footer{
+		.container{
+			flex-direction: initial !important;
+		}
+	}
+}
+
+@media(min-width:900px){
+	footer{
+		.container{
+			gap: 50px;
+		}
+	}
+}
+
+@media(min-width:1060px){
+	footer{
+		.container{
+			gap: 70px;
+		}
+	}
+	.contact{
+		padding-right: 137px !important;
+	}
+}
+
+@media(min-width:1100px){
+	footer{
+		.container{
+			gap: 100px;
+		}
+	}
+}
+
+
+@media(min-width:1150px){
+	footer{
+		.container{
+			gap: 137px;
+		}
+	}
+}
+
+
+@media(min-width:1200px){
+	footer{
+		.container{
+			gap: 157px;
+		}
+	}
+}

@@ -1,0 +1,227 @@
+@use "../main.scss";
+
+$blue: #2405f2;
+$black: #282938;
+$white: #f4f6fc;
+$yellow: #fcd980;
+$darkblue: #1c1e53;
+$ivory: #eef4fa;
+
+main {
+  background-color: #fff;
+  padding-top: 200px;
+  padding-bottom: 128px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      margin: 16px 0 64px;
+      max-width: 560px;
+      opacity: 0.7;
+    }
+    .prices {
+      margin-bottom: 128px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+      .price-card:hover {
+        background-color: $darkblue;
+        li {
+          color: $white;
+        }
+        p {
+          color: $white;
+        }
+        h3 {
+          color: $white;
+        }
+        h6 {
+          color: $white;
+        }
+        button {
+          background-color: $yellow;
+          color: $black;
+        }
+        .narx {
+          p {
+            color: $yellow;
+          }
+        }
+      }
+      .price-card {
+        border-radius: 12px;
+        position: relative;
+        background-color: $white;
+        padding: 64px 48px;
+        .narx {
+          display: flex;
+          gap: 15px;
+          align-items: center;
+          h3 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 38px;
+            line-height: 56px;
+          }
+          p {
+            color: $blue;
+            margin: 0;
+          }
+        }
+        h6 {
+          margin: 20px 0 8px;
+        }
+        p {
+          max-width: 280px;
+          margin: 0 0 78px;
+        }
+        .p {
+          margin-bottom: 35px;
+        }
+        .p2 {
+          margin-bottom: 50px;
+        }
+        ul {
+          padding-left: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding-bottom: 200px;
+          li {
+            display: flex;
+            gap: 12px;
+            list-style-type: none;
+            list-style-position: inside;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #282938;
+          }
+        }
+        button {
+          position: absolute;
+          bottom: 62px;
+          border: none;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 32px;
+          padding: 16px 77px;
+          background: $black;
+          color: $white;
+          border-radius: 40px;
+        }
+        .grey {
+          color: #282938;
+          opacity: 0.7;
+        }
+      }
+    }
+    .questions {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 25px;
+      .questions-left {
+        p {
+          color: $blue;
+        }
+        h2 {
+          max-width: 420px;
+          margin-bottom: 16px;
+        }
+      }
+      .accordion {
+        width: 350px;
+        h2 {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 36px;
+          max-width: 800px;
+        }
+
+      }
+      span {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: $blue;
+        margin-right: 58px;
+      }
+      .accordion-button::after {
+        background-image: url(../../images/pricing/plus-lg.svg);
+      }
+      .accordion-button:not(.collapsed)::after {
+        background-image: url(../../images/pricing/x-lg.svg);
+      }
+      .accordion-body {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 624px;
+        color: #282938;
+        opacity: 0.87;
+      }
+    }
+  }
+}
+
+@media(min-width:500px){
+  .accordion{
+    width: 400px !important;
+  }
+}
+@media(min-width:600px){
+  .accordion{
+    width: 500px !important;
+  }
+}
+@media(min-width:700px){
+  .accordion{
+    width: 600px !important;
+  }
+}
+
+
+
+@media (min-width: 1000px) {
+  .questions {
+    flex-direction: initial !important;
+    .accordion {
+      width: 60% !important;
+      .accordion-item{
+        width: 580px;
+      }
+    }
+  }
+}
+
+@media(min-width:1100px){
+  .accordion-item{
+    width: 630px !important;
+  }
+}
+
+
+@media(min-width:1200px){
+  .accordion-item{
+    width: 700px !important;
+  }
+}
+
+@media(min-width:1350px){
+  .accordion-item{
+    width: 780px !important;
+  }
+}
+
+
+
+@media(min-width:1400px){
+  .accordion-item{
+    width: 810px !important;
+  }
+}
